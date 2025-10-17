@@ -1,5 +1,3 @@
-source(file = "SCRIPTS/1_CODE_Data_Manipulation.R")
-
 ##### Supplementary Table 1 ##### 
 # HUNT 3 57-69 age
 table(is.na(data$PlaPTau217NT3_113229[data$PartAg_NT3BLQ1 < 70]))
@@ -516,3 +514,4 @@ clipr::write_clip(p_values)
 clipr::write_clip(p.adjust(p_values, method = "bonferroni"))
 
 rm(m01,m02,m03,m04,m05,m06,m07,m08,m09,m10,m11,m12,m13,m14,m15,m16,m17,p_values)
+
