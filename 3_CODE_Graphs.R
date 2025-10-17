@@ -1,5 +1,3 @@
-source(file = "SCRIPTS/1_CODE_Data_Manipulation.R")
-
 ##### Figure 1 #####
 data1 <- data[data$PartAg_NT3BLQ1 < 70& !is.na(data$PlaPTau217NT3_113229), c("Age_cat_NT3BLQ1", "PlaPTau217NT3_113229")]
 data2 <- data[!is.na(data$PartAg_NT4BLM) & !is.na(data$PlaPTau217NT4_113229),c("Age_cat_NT4BLM", "PlaPTau217NT4_113229")]
@@ -226,3 +224,4 @@ ggplot(data = Table, mapping = aes(x = Age, y = Pre, group = Edu, colour = Edu))
 dev.off()
 
 rm(a,b,c,i,j,Table)
+
